@@ -1,0 +1,25 @@
+- each computer has unique number, in 32bit (ip4 concept), this is ip address
+  - should know server ip (who you are conencting to)
+  - on a single server you can have multiple services running, you should know
+    which port number a server is running out of
+
+- need 2 C program files, one for server, one for client
+- need to run server first, then client
+- client needs to know server ip/port number to connect
+
+RUNNING THE PROGRAM:
+1. client.c
+2. server.c
+
+- compile the client
+cc client.c -o client.out (creates client.out)
+
+-compile the server
+cc server.c -o server.out (creates server.out)
+
+NOW in one terminal, operate the server
+./server.out 4547 (4547 is the specified port number)
+- blinking cursor means the server is now in listening mode
+
+open a second terminal to be the client
+./clinet.out localhost 4547 
